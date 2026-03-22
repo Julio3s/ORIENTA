@@ -226,9 +226,14 @@ SIMPLE_JWT = {
 }
 
 # CORS
-CORS_ALLOWED_ORIGINS = config(
-    'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:5173,http://127.0.0.1:5173,https://orienta-api.onrender.com'
-).split(',')
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://loquacious-madeleine-babb46.netlify.app",
+    "https://*.netlify.app",  # Autorise tous les sites Netlify (optionnel)
+]
 
 CORS_ALLOW_CREDENTIALS = True
+
+# Ou si tu veux tout autoriser (pour les tests) :
+# CORS_ALLOW_ALL_ORIGINS = True
