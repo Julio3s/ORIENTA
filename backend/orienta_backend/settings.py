@@ -237,3 +237,4 @@ CORS_ALLOW_CREDENTIALS = True
 
 # Ou si tu veux tout autoriser (pour les tests) :
 # CORS_ALLOW_ALL_ORIGINS = True
+DEBUG = True
